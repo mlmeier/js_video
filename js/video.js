@@ -47,6 +47,12 @@ document.querySelector("#slider").addEventListener('input', function(x) {
   video.volume = this.value;
   document.querySelector("#slider").innerHTML = this.value;
 });
+document.querySelector("#vintage").addEventListener("click", function() {
+	document.querySelector("link").setAttribute("href","");
+})
+document.querySelector("#orig").addEventListener("click", function() {
+	document.querySelector("link").setAttribute("href","css/video.css");
+})
 // document.querySelector("#play").addEventListener("click", function() {
 // 	console.log("Play Video");
 // });
